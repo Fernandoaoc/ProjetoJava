@@ -24,16 +24,18 @@ public class MovimentacaoService {
 
 	public Movimentacao getMovimentacaoById(int id) {
 		// TODO Auto-generated method stub
-		return null;
+		return movimentacaoRepository.findById((long) id).get();
 	}
 
 	public void delete(int id) {
 		// TODO Auto-generated method stub
+		movimentacaoRepository.deleteById((long) id);
 		
 	}
 
 	public void saveOrUpdate(Movimentacao movimentacao) {
 		// TODO Auto-generated method stub
+		movimentacaoRepository.save(movimentacao);
 		
 	}
 
