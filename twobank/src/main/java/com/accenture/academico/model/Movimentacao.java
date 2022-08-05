@@ -44,7 +44,7 @@ public class Movimentacao {
 	public void setValoroperacao(double valoroperacao) {
 		this.valoroperacao = valoroperacao;
 	}
-	public int getConta_idconta() {
+	public Long getConta_idconta() {
 		return conta_idconta;
 	}
 	public void setConta_idconta(Long conta_idconta) {
