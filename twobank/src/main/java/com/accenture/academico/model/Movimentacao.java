@@ -15,11 +15,11 @@ public class Movimentacao {
 
 	@Id
 	@Column
-	private int movimentacaoid;
+	private Long movimentacaoid;
 	private DateTimeFormat datahoramovimento;
 	private boolean operacao;
 	private double valoroperacao;
-	private int conta_idconta;
+	private Long conta_idconta;
 	
 	
     @ManyToOne   
@@ -47,7 +47,7 @@ public class Movimentacao {
 	public int getConta_idconta() {
 		return conta_idconta;
 	}
-	public void setConta_idconta(int conta_idconta) {
+	public void setConta_idconta(Long conta_idconta) {
 		this.conta_idconta = conta_idconta;
 	}
 	public int getId() {
